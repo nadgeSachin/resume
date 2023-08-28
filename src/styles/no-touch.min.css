@@ -276,7 +276,7 @@ textarea:focus {
   font-size: 1rem;
   border-radius: 2rem;
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: green;
   box-shadow: none;
   outline: 0;
   border: none;
@@ -454,7 +454,7 @@ input:checked + .slider:before {
 }
 .parallax {
   /* background-image: url(https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
-  background-image: url("../background.jpeg");
+  background-image: url("../images/background.jpeg");
 }
 @keyframes typewriter {
   from {

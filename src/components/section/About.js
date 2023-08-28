@@ -1,7 +1,7 @@
 import React from 'react'
 import Skills from '../layouts/Skills'
 import { about, skillsBar, section2title } from '../../profile'
-import imgs from "../../Professional-Picture-Me.jpeg"
+import imgs from "../../images/p2.jpeg"
 import "../../styles/no-touch.min.css"
 const About = () => {
     return (

@@ -1,10 +1,8 @@
 import React from 'react';
-import HeaderButton from '../layouts/HeaderButton'
 import { header } from '../../profile'
 import "../../styles/no-touch.min.css"
 import 'font-awesome/css/font-awesome.min.css'; 
 import { Link } from 'react-scroll';
-import DigitalWatch from './DigitalWatch';
 const Header = () => {
 
     const scrollTo = () => {
@@ -18,7 +16,6 @@ const Header = () => {
     return (
         <div>
             <div className="Header">
-            <DigitalWatch/>
                 <h1>{  `${header.name}` }</h1>
             <p className="line-1 anim-typewriter">Programmer|Web Developer..</p>
             <a className="down" href="#about" data-scroll>

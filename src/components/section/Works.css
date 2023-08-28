@@ -1,7 +1,110 @@
-.project{
-    margin: 5px;
-}
+.project {
+    background-color: #fff;
+    box-shadow: 0px 2px 4px #4f46461a; /* Add shadow effect */
+    border-radius: 10px;
+    padding: 16px;
+    /* margin-bottom: 16px;
+    margin: 5px; */
+    display: flex;
+    flex-direction: column; /* This ensures content stacks vertically */
+    align-items: center; 
+    /* Add any other styling properties as needed */
+  }
+  
 .sub_project{
-    margin-top: 20px;
-    margin-bottom: 20px;
+  margin-top: 20px; /* You had this set already */
+  text-align: center;
+  padding: 20px;
+
+}
+.learn-more-button {
+    background-color: #4CAF50; /* Set the background color */
+    color: white; /* Set the text color */
+    border: none; /* Remove border */
+    padding: 12px 24px; /* Set padding */
+    text-align: center; /* Center-align text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Make it an inline element */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Add cursor pointer on hover */
+    border-radius: 4px; /* Add border radius */
+    transition-duration: 0.3s; /* Add transition effect */
+  }
+  
+  .learn-more-button:hover {
+    background-color: #45a049; /* Change background color on hover */
+  }
+  
+
+
+* { box-sizing: border-box; }
+body { font-family: Verdana, sans-serif; margin: 0; }
+.images { display: none; }
+img { vertical-align: middle; width: 100%; }
+
+.carousel-container {
+   max-width: 100%; 
+   position: relative; 
+   /* margin: auto; */
+   margin-bottom: 20px;
+   box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; }
+
+.previous, .next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 16px;
+  /* color: white; */
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: black;
+  border: none;
+}
+
+.next { 
+  right: -11px;
+  background-color: black;
+}
+.previous:hover, .next:hover { background-color: rgba(0,0,0,0.8); }
+
+.project-image {
+  height: 400px;  /* Set a fixed height for all images */
+  width: auto;    /* Let width adjust automatically */
+  object-fit: contain;  /* Ensures the image maintains its aspect ratio */
+  display: block;  /* To ensure image is a block level element */
+  margin: 0 auto;  /* Center the image */
+  background-color: #fff; /* In case you want a background color for images that don't cover full width */
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  position: static;
+  bottom: 0;
+}
+
+.navigation-dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slick-active .navigation-dot, .navigation-dot:hover {
+  background-color: #717171;
+}
+
+/* Adjust the image height for mobile screens */
+@media only screen and (max-width: 768px) {
+  .project-image {
+    height: 190px;  /* Adjusted height for mobile screens */
+  }
 }

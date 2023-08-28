@@ -1,7 +1,6 @@
 import React from 'react';
 import Particles from 'react-particles-js';
 import { background } from '../../profile';
-import DigitalWatch from '../section/DigitalWatch';
 const ParticlesBackground = () => {
     const particlesConfig = {
         particles: {
